@@ -1,6 +1,6 @@
 node {
     stage("clone"){
-        git https://github.com/sivanleventhal/MySoftware.git
+        git "https://github.com/sivanleventhal/MySoftware.git"
     }
     stage("click"){
         bat "python click.py"
