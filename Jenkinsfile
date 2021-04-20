@@ -1,8 +1,11 @@
 node {
     stage("clone"){
-        git branch: 'main', url: 'https://github.com/sivanleventhal/Project1.git'
+        git https://github.com/sivanleventhal/MySoftware.git
     }
-    stage("myapp"){
-        bat "python myapp.py"
+    stage("click"){
+        bat "python click.py"
+    }
+    stage("welcome"){
+        bat "python welcome.py"
     }
 }
